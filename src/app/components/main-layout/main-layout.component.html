@@ -1,0 +1,20 @@
+<div class="min-h-screen bg-gray-50">
+  <app-sidebar [isOpen]="sidebarOpen"></app-sidebar>
+  
+  <div [class.lg:ml-64]="sidebarOpen" class="transition-all duration-300">
+      <app-navbar (toggleSidebar)="onToggleSidebar()"></app-navbar>
+      <main class="p-4">
+        <ng-content></ng-content>
+      </main>
+      <footer class="text-center text-xs text-gray-500 py-4 border-t mt-10">
+        Copyright © SONATEL SECURITE 2023. Tous Droits Réservés.kkkkkkkkkkkkkkkk
+
+      </footer>
+    </div>
+   
+    <div 
+      *ngIf="sidebarOpen" 
+      class="fixed inset-0 bg-black bg-opacity-50 z-0 lg:hidden"
+      (click)="onToggleSidebar()">
+    </div>
+  </div>

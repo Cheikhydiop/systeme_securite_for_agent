@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUNU-POINTAGE - Connexion</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body class="bg-building min-h-screen">
+<div class="absolute inset-0 bg-black bg-opacity-30"></div>
+<div class="right-sidebar z-10">
+  <div class="login-card">
+    <div class="login-logo">
+      <span>sonatel</span>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEXveBb////uawD//fzvcwD1rHrubQD++/nzQibAAAAAhUlEQVR4nO3PsRGAMAwEsJBA2H9jKmoK3/EupA00BgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwk7O7cvDqrlqcR3ezOlzpwYdlaGgYZ2homGdoaJhnaGiYZ2homGdoaJhnaGiYZ/hp36u3exeHY8/eykEAAAAAAADg9QDyJR1mwwJmWAAAAABJRU5ErkJggg==" alt="SUNU-POINTAGE">
+    </div>
+    <div class="text-start mb-6">
+      <p class="text-sm">Bienvenue sur <span class="text-orange-custom font-bold">GSECU</span></p>
+      <h1 class="text-2xl font-bold mt-2">Se connecter</h1>
+    </div>
+    <form  (submit)="onLogin($event)">
+      <div class="mb-4">
+        <label class="block text-sm mb-1">Entrez votre numéro de téléphone ou votre email</label>
+        <input
+          type="email" 
+          [(ngModel)]="login" 
+          name="login" 
+          placeholder="Email" 
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+        >
+      </div>
+      <div class="mb-2">
+        <label class="block text-sm mb-1">Entrez votre mot de passe</label>
+        <input
+        type="password" 
+        [(ngModel)]="password" 
+        name="password" 
+        required
+        placeholder="Mot de passe"
+        class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+        >
+      </div>
+      <div class="text-right mb-4">
+        <a href="#" class="text-orange-custom text-sm hover:underline">Mot de passe oublié ?</a>
+      </div>
+      <button type="submit" class="btn-login">
+        Se connecter
+      </button>
+      <p *ngIf="errorMessage" class="text-red-500 text-sm text-center">{{ errorMessage }}</p>
+
+    </form>
+  </div>
+</div>
+</body>
+</html>

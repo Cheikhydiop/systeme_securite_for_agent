@@ -1,0 +1,85 @@
+<app-main-layout>
+    <div class="container mx-auto px-4 py-4">
+        <!-- Header -->
+        <div class="mb-4">
+            <h1 class="text-2xl font-bold text-orange-500">Services</h1>
+        </div>
+
+        <!-- Search and Filter Bar -->
+        <div class="flex flex-wrap gap-4 mb-6">
+            <div class="relative flex-grow ">
+                <input type="text" placeholder="Rechercher vigiles..." class="w-80 p-2 pl-8 border border-gray-300 rounded-md">
+                <span class="absolute left-2 top-2.5 text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+
+                <select class="w-52 p-2 border border-gray-300 rounded-md appearance-none">
+                    <option>Filtre par statut</option>
+                </select>
+                <span class="absolute right-2 top-2.5 text-gray-400">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class="relative w-64">
+               
+            </div>
+            <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md flex items-center">
+                <i class="fas fa-plus-circle mr-2"></i>
+                Ajouter un service
+            </button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-6 gap-0 border-t border-l border-r border-blue-200">
+            <!-- Service Column Headers -->
+            <div class="bg-white border-b border-blue-200 p-3 font-semibold text-center flex items-center justify-between">
+                <span class="text-orange-500">Single VPN</span>
+                <span class="bg-orange-100 text-orange-500 w-6 h-6 rounded-full flex items-center justify-center">1</span>
+            </div>
+            <div class="bg-white border-b border-l border-blue-200 p-3 font-semibold text-center flex items-center justify-between">
+                <span class="text-orange-500">Salsa1</span>
+                <span class="bg-orange-100 text-orange-500 w-6 h-6 rounded-full flex items-center justify-center">2</span>
+            </div>
+            <div class="bg-white border-b border-l border-blue-200 p-3 font-semibold text-center flex items-center justify-between">
+                <span class="text-orange-500">Molino</span>
+                <span class="bg-orange-100 text-orange-500 w-6 h-6 rounded-full flex items-center justify-center">3</span>
+            </div>
+            <div class="bg-white border-b border-l border-blue-200 p-3 font-semibold text-center flex items-center justify-between">
+                <span class="text-orange-500">Openterrasse</span>
+                <span class="bg-orange-100 text-orange-500 w-6 h-6 rounded-full flex items-center justify-center">4</span>
+            </div>
+            <div class="bg-white border-b border-l border-blue-200 p-3 font-semibold text-center flex items-center justify-between">
+                <span class="text-orange-500">Sonatel Academy</span>
+                <span class="bg-orange-100 text-orange-500 w-6 h-6 rounded-full flex items-center justify-center">5</span>
+            </div>
+            <div class="bg-white border-b border-l border-blue-200 p-3 font-semibold text-center flex items-center justify-between">
+                <span class="text-orange-500">Matix</span>
+                <span class="bg-orange-100 text-orange-500 w-6 h-6 rounded-full flex items-center justify-center">6</span>
+            </div>
+
+            <!-- Boucle sur les lignes de services (exemple statique) -->
+            <div class="bg-white border-b border-blue-200 p-3">
+                <div class="flex justify-between text-orange-500 text-sm mb-2">
+                    <span>Service Mobile</span>
+                    <span>...</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <input type="checkbox" class="mr-2">
+                        <span class="text-xs text-gray-500">21/12/2024</span>
+                        <span class="ml-2 text-xs bg-blue-100 text-blue-500 px-1 rounded">4</span>
+                    </div>
+                    <div>
+                        <button class="text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Répéter la même structure pour les autres colonnes -->
+        </div> <!-- Fermeture correcte de la div .grid -->
+
+    </div> <!-- Fermeture correcte de la div .container -->
+
+</app-main-layout> <!-- Fermeture correcte de app-main-layout -->

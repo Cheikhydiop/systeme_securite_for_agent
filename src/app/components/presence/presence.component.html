@@ -1,0 +1,172 @@
+<app-main-layout>
+  <div class="min-h-auto bg-gray-50">
+    <!-- Main Content -->
+    <main class="max-w-8xl mx-auto px-4 py-6">
+      <div class="bg-white rounded-lg shadow">
+        <!-- Table Header -->
+        <div class="p-4 border-b flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <h2 class="text-xl font-semibold text-orange-500">Presences</h2>
+            <div class="flex">
+              <button class="bg-orange-500 text-white px-3 py-1 rounded-sm mr-2">Absent</button>
+              <button class="text-gray-700 px-3 py-1 mr-2">Retard</button>
+              <button class="text-gray-700 px-3 py-1">Present</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recherche et filtre sous le titre Vigile -->
+        <div class="p-4 flex items-center justify-between">
+          <div class="flex gap-2">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Rechercher par date"
+                class="px-3 py-1.5 border rounded pr-8"
+              />
+              <span class="absolute right-2 top-2">
+                <i class="fa fa-calendar text-orange-500"></i>
+              </span>
+            </div>
+            <div class="relative">
+              <select class="px-3 py-1.5 border rounded pr-8 appearance-none">
+                <option>Filtre par services</option>
+              </select>
+              <span class="absolute right-2 top-2 pointer-events-none">
+                <i class="fa fa-chevron-down text-orange-500"></i>
+              </span>
+            </div>
+          </div>
+          <button class="bg-orange-500 text-white px-4 py-1.5 rounded flex items-center gap-2">
+            <i class="fa fa-download"></i>
+            <span>Télécharger le fichier</span>
+          </button>
+        </div>
+
+            <!-- Table -->
+            <table class="w-full">
+              <thead class="bg-orange-500 text-white">
+                <tr>
+                  <th class="px-4 py-3 text-left">Vigile</th>
+                  <th class="px-4 py-3 text-left">Code pin</th>
+                  <th class="px-4 py-3 text-left">Genre</th>
+                  <th class="px-4 py-3 text-left">Matricule</th>
+                  <th class="px-4 py-3 text-left">N° déclaration</th>
+                  <th class="px-4 py-3 text-left">Email</th>
+                  <th class="px-4 py-3 text-left">Statut</th>
+                  <th class="px-4 py-3 text-left">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b">
+                  <td class="px-4 py-3">Alousia Diop</td>
+                  <td class="px-4 py-3">1058215</td>
+                  <td class="px-4 py-3">F</td>
+                  <td class="px-4 py-3">BP-12425</td>
+                  <td class="px-4 py-3">767846492</td>
+                  <td class="px-4 py-3">chamarois45com</td>
+                  <td class="px-4 py-3">
+                    <span class="px-2 py-1 bg-green-200 text-green-800 rounded-sm text-xs">
+                      Ok
+                    </span>
+                  </td>
+                  <td class="px-4 py-3">
+                    <button class="text-gray-400 hover:text-gray-600">
+                      <i class="fa fa-ellipsis-h text-gray-500" style="font-size: 1.25rem;"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="border-b">
+                  <td class="px-4 py-3">Ousmane Donfakha</td>
+                  <td class="px-4 py-3">1058215</td>
+                  <td class="px-4 py-3">M</td>
+                  <td class="px-4 py-3">BP-12425</td>
+                  <td class="px-4 py-3">767846492</td>
+                  <td class="px-4 py-3">chamarois452com</td>
+                  <td class="px-4 py-3">
+                    <span class="px-2 py-1 bg-green-200 text-green-800 rounded-sm text-xs">
+                      Agent
+                    </span>
+                  </td>
+                  <td class="px-4 py-3">
+                    <button class="text-gray-400 hover:text-gray-600">
+                      <i class="fa fa-ellipsis-h text-gray-500" style="font-size: 1.25rem;"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="border-b">
+                  <td class="px-4 py-3">Cheikh Diop</td>
+                  <td class="px-4 py-3">1058215</td>
+                  <td class="px-4 py-3">M</td>
+                  <td class="px-4 py-3">BP-12425</td>
+                  <td class="px-4 py-3">767846492</td>
+                  <td class="px-4 py-3">chamarois45.com</td>
+                  <td class="px-4 py-3">
+                    <span class="px-2 py-1 bg-green-200 text-green-800 rounded-sm text-xs">
+                      Agent
+                    </span>
+                  </td>
+                  <td class="px-4 py-3">
+                    <button class="text-gray-400 hover:text-gray-600">
+                      <i class="fa fa-ellipsis-h text-gray-500" style="font-size: 1.25rem;"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="border-b">
+                  <td class="px-4 py-3">Alousia Diop</td>
+                  <td class="px-4 py-3">1058215</td>
+                  <td class="px-4 py-3">F</td>
+                  <td class="px-4 py-3">BP-12425</td>
+                  <td class="px-4 py-3">767846492</td>
+                  <td class="px-4 py-3">chamarois45mail.com</td>
+                  <td class="px-4 py-3">
+                    <span class="px-2 py-1 bg-green-200 text-green-800 rounded-sm text-xs">
+                      Agent
+                    </span>
+                  </td>
+                  <td class="px-4 py-3">
+                    <button class="text-gray-400 hover:text-gray-600">
+                      <i class="fa fa-ellipsis-h text-gray-500" style="font-size: 1.25rem;"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr class="border-b">
+                  <td class="px-4 py-3">Ousmane Donfakha</td>
+                  <td class="px-4 py-3">1058215</td>
+                  <td class="px-4 py-3">M</td>
+                  <td class="px-4 py-3">BP-12425</td>
+                  <td class="px-4 py-3">767846492</td>
+                  <td class="px-4 py-3">chamaroiscom</td>
+                  <td class="px-4 py-3">
+                    <span class="px-2 py-1 bg-green-200 text-green-800 rounded-sm text-xs">
+                      Agent
+                    </span>
+                  </td>
+                  <td class="px-4 py-3">
+                    <button class="text-gray-400 hover:text-gray-600">
+                      <i class="fa fa-ellipsis-h text-gray-500" style="font-size: 1.25rem;"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+    
+        <!-- Pagination -->
+        <div class="px-4 py-3 border-t flex items-center justify-between">
+          <div class="text-sm text-gray-500">
+            1 à 5 vigiles pour 142
+          </div>
+          <div class="flex gap-1">
+            <button class="px-3 py-1 border rounded bg-orange-500 text-white">1</button>
+            <button class="px-3 py-1 border rounded">2</button>
+            <button class="px-3 py-1 border rounded">3</button>
+            <button class="px-3 py-1 border rounded">4</button>
+            <button class="px-3 py-1 border rounded">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</app-main-layout>
